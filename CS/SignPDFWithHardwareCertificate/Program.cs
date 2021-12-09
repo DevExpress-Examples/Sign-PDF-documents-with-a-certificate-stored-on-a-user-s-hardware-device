@@ -16,13 +16,10 @@ namespace SignPDFWithHardwareCertificate
         static void Main(string[] args)
         {
             X509Certificate2 cert = GetCertificate();
-            if (cert == null)
+            if (cert != null)
             {
-                Console.WriteLine("Certificate not found");
-                return;
+                SignPDF(cert);
             }
-
-            SignPDF(cert);
         }
         static X509Certificate2 GetCertificate()
         {
@@ -32,15 +29,20 @@ namespace SignPDFWithHardwareCertificate
             X509Store store = new X509Store(StoreLocation.CurrentUser);
             store.Open(OpenFlags.ReadOnly | OpenFlags.OpenExistingOnly);
 
-            X509Certificate2 cert = null;
             X509Certificate2Collection selectedCertificates = X509Certificate2UI.SelectFromCollection(store.Certificates, null, null, X509SelectionFlag.SingleSelection);
             if (selectedCertificates.Count == 0)
-                Console.WriteLine("There is no installed certificates on this machine.");
+            {
+                Console.WriteLine("There are no installed certificates on this machine.");
+                return null;
+            }
 
-            else
-                cert = selectedCertificates[0];
+            foreach (var certificate in selectedCertificates)
+            {
+                if (certificate.HasPrivateKey)
+                    return certificate;
+            }
                         
-            return cert;
+            return null;
         }
         static void SignPDF(X509Certificate2 cert)
         {
