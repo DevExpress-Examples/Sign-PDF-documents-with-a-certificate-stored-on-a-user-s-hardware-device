@@ -20,6 +20,8 @@ namespace SignPDFWithHardwareCertificate
             {
                 SignPDF(cert);
             }
+            else
+                Console.WriteLine("There are no installed certificates on this machine.");
         }
         static X509Certificate2 GetCertificate()
         {
@@ -30,12 +32,6 @@ namespace SignPDFWithHardwareCertificate
             store.Open(OpenFlags.ReadOnly | OpenFlags.OpenExistingOnly);
 
             X509Certificate2Collection selectedCertificates = X509Certificate2UI.SelectFromCollection(store.Certificates, null, null, X509SelectionFlag.SingleSelection);
-            if (selectedCertificates.Count == 0)
-            {
-                Console.WriteLine("There are no installed certificates on this machine.");
-                return null;
-            }
-
             foreach (var certificate in selectedCertificates)
             {
                 if (certificate.HasPrivateKey)
