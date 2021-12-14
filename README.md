@@ -15,7 +15,8 @@ Create a [Pkcs7Signer](https://docs.devexpress.com/OfficeFileAPI/DevExpress.Pdf.
 
 ## Files to Look At
 
-[Program.cs](./CS/SignPDFWithHardwareCertificate/Program.cs)
+- [Program.cs](./CS/SignPDFWithHardwareCertificate/Program.cs)
+- [Program.vb](./VB/SignPDFWithHardwareCertificate/Program.vb)
 
 
 ## Documentation
