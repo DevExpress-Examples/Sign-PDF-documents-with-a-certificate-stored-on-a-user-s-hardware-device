@@ -5,7 +5,7 @@
 <!-- default badges end -->
 # PDF Document API - Sign a PDF document with a certificate stored on a hardware device
 
-The DevExpress [PDF Document API](https://docs.devexpress.com/OfficeFileAPI/16491/pdf-document-api) library allows you to retrieve a certificate from a hardware device (Windows certificate store, SmartCard, USB Token, etc.). This example demonstrates how to use a certificate stored on a user's machine. You can also adapt this solution to sign documents using certificates from any physical store.  
+The DevExpress [PDF Document API](https://docs.devexpress.com/OfficeFileAPI/16491/pdf-document-api) library allows you to retrieve a certificate from a hardware device (such as Windows certificate store, SmartCard, USB Token). This example demonstrates how to use a certificate stored on a user's machine. You can also adapt this solution to sign documents using certificates from any physical store.  
 
 ## Implementation Details
 
