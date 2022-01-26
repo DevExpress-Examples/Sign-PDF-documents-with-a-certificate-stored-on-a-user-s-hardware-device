@@ -3,7 +3,6 @@ Imports System
 Imports System.Diagnostics
 Imports System.IO
 Imports System.Security.Cryptography.X509Certificates
-Imports DevExpress.Office.DigitalSignatures
 
 Namespace SignPDFWithHardwareCertificate
 
@@ -37,7 +36,7 @@ Namespace SignPDFWithHardwareCertificate
         Private Shared Sub SignPDF(ByVal cert As X509Certificate2)
             Using signer = New PdfDocumentSigner(File.OpenRead("Demo.pdf"))
                 ' Create a PKCS#7 signature
-                Dim pkcs7Signature As Pkcs7Signer = New Pkcs7Signer(cert, HashAlgorithmType.SHA256)
+                Dim pkcs7Signature As Pkcs7Signer = New Pkcs7Signer(cert, DevExpress.Office.DigitalSignatures.HashAlgorithmType.SHA256)
                 ' Create a signature field on the first page
                 Dim signatureFieldInfo = New PdfSignatureFieldInfo(1)
                 ' Specify the field's name and location
