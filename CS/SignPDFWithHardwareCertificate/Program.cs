@@ -1,13 +1,9 @@
-﻿using DevExpress.Pdf;
+using DevExpress.Pdf;
 using System;
-using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
-using System.Linq;
-using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
+using DevExpress.Office.DigitalSignatures;
 
 namespace SignPDFWithHardwareCertificate
 {
@@ -48,7 +44,7 @@ namespace SignPDFWithHardwareCertificate
             using (var signer = new PdfDocumentSigner(File.OpenRead("Demo.pdf")))
             {
                 // Create a PKCS#7 signature
-                Pkcs7Signer pkcs7Signature = new Pkcs7Signer(cert, DevExpress.Office.DigitalSignatures.HashAlgorithmType.SHA256);
+                Pkcs7Signer pkcs7Signature = new Pkcs7Signer(cert, HashAlgorithmType.SHA256);
                 
                 // Create a signature field on the first page
                 var signatureFieldInfo = new PdfSignatureFieldInfo(1);
