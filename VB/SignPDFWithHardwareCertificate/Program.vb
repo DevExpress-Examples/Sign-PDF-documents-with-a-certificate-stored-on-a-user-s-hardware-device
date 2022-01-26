@@ -18,12 +18,16 @@ Namespace SignPDFWithHardwareCertificate
         End Sub
 
         Private Shared Function GetCertificate() As X509Certificate2
-            'get a certificate from a Windows Store
-            'You can adapt this code to read a certificate from SmartCard or USB Token
+            ' Get a certificate from a Windows Store
+            ' You can adapt this code to read a certificate from SmartCard or USB Token
             ' https://stackoverflow.com/questions/63086592/how-to-enter-pin-for-x509certificate2-certificate-programmatically-when-signing
             Dim store As X509Store = New X509Store(StoreLocation.CurrentUser)
             store.Open(OpenFlags.ReadOnly Or OpenFlags.OpenExistingOnly)
+        
+            ' Display a dialog box to select a certificate from the Windows Store
             Dim selectedCertificates As X509Certificate2Collection = X509Certificate2UI.SelectFromCollection(store.Certificates, Nothing, Nothing, X509SelectionFlag.SingleSelection)
+            
+            ' Get the first certificate that has a primary key
             For Each certificate In selectedCertificates
                 If certificate.HasPrivateKey Then Return certificate
             Next
@@ -33,12 +37,22 @@ Namespace SignPDFWithHardwareCertificate
 
         Private Shared Sub SignPDF(ByVal cert As X509Certificate2)
             Using signer = New PdfDocumentSigner(File.OpenRead("Demo.pdf"))
+                
+                ' Create a PKCS#7 signature
                 Dim pkcs7Signature As Pkcs7Signer = New Pkcs7Signer(cert, DevExpress.Office.DigitalSignatures.HashAlgorithmType.SHA256)
+            
+                ' Create a signature field on the first page    
                 Dim signatureFieldInfo = New PdfSignatureFieldInfo(1)
+            
+                ' Specify the field's name and location
                 signatureFieldInfo.Name = "SignatureField"
                 signatureFieldInfo.SignatureBounds = New PdfRectangle(20, 20, 150, 150)
+            
+                ' Apply a signature to a newly created signature field  
                 Dim cooperSignature = New PdfSignatureBuilder(pkcs7Signature, signatureFieldInfo)
                 cooperSignature.SetImageData(File.ReadAllBytes("JaneCooper.jpg"))
+                
+                ' Sign and save the document    
                 signer.SaveDocument("SignedDocument.pdf", cooperSignature)
             End Using
 
