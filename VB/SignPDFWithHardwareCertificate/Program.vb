@@ -20,8 +20,6 @@ Namespace SignPDFWithHardwareCertificate
 
         Private Shared Function GetCertificate() As X509Certificate2
             ' Get a certificate from a Windows Store
-            ' You can adapt this code to read a certificate from SmartCard or USB Token
-            ' https://stackoverflow.com/questions/63086592/how-to-enter-pin-for-x509certificate2-certificate-programmatically-when-signing
             Dim store As X509Store = New X509Store(StoreLocation.CurrentUser)
             store.Open(OpenFlags.ReadOnly Or OpenFlags.OpenExistingOnly)
             ' Display a dialog box to select a certificate from the Windows Store
