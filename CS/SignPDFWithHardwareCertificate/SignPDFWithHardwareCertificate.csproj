@@ -34,58 +34,58 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Charts.v21.1.Core, Version=21.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.Charts.v21.1.Core, Version=21.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
-      <HintPath>..\packages\DevExpress.Charts.Core.21.1.7\lib\net452\DevExpress.Charts.v21.1.Core.dll</HintPath>
+      <HintPath>..\packages\DevExpress.Charts.Core.21.1.9\lib\net452\DevExpress.Charts.v21.1.Core.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.CodeParser.v21.1, Version=21.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.CodeParser.v21.1, Version=21.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
-      <HintPath>..\packages\DevExpress.CodeParser.21.1.7\lib\net452\DevExpress.CodeParser.v21.1.dll</HintPath>
+      <HintPath>..\packages\DevExpress.CodeParser.21.1.9\lib\net452\DevExpress.CodeParser.v21.1.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.Data.v21.1, Version=21.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.Data.v21.1, Version=21.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
-      <HintPath>..\packages\DevExpress.DataVisualization.Core.21.1.7\lib\net452\DevExpress.DataVisualization.v21.1.Core.dll</HintPath>
+      <HintPath>..\packages\DevExpress.DataVisualization.Core.21.1.9\lib\net452\DevExpress.DataVisualization.v21.1.Core.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.DataAccess.v21.1, Version=21.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.DataAccess.v21.1, Version=21.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
-      <HintPath>..\packages\DevExpress.DataVisualization.Core.21.1.7\lib\net452\DevExpress.DataVisualization.v21.1.Core.dll</HintPath>
+      <HintPath>..\packages\DevExpress.DataVisualization.Core.21.1.9\lib\net452\DevExpress.DataVisualization.v21.1.Core.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.DataVisualization.v21.1.Core, Version=21.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.DataVisualization.v21.1.Core, Version=21.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
-      <HintPath>..\packages\DevExpress.DataVisualization.Core.21.1.7\lib\net452\DevExpress.DataVisualization.v21.1.Core.dll</HintPath>
+      <HintPath>..\packages\DevExpress.DataVisualization.Core.21.1.9\lib\net452\DevExpress.DataVisualization.v21.1.Core.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.Docs.v21.1, Version=21.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="DevExpress.Office.v21.1.Core, Version=21.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.Docs.v21.1, Version=21.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Pdf.v21.1.Core, Version=21.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.Office.v21.1.Core, Version=21.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Pdf.v21.1.Drawing, Version=21.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.Pdf.v21.1.Core, Version=21.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Printing.v21.1.Core, Version=21.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.Pdf.v21.1.Drawing, Version=21.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.RichEdit.v21.1.Core, Version=21.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.Printing.v21.1.Core, Version=21.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Snap.v21.1.Core, Version=21.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.RichEdit.v21.1.Core, Version=21.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Sparkline.v21.1.Core, Version=21.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.Snap.v21.1.Core, Version=21.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Spreadsheet.v21.1.Core, Version=21.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.Sparkline.v21.1.Core, Version=21.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Xpo.v21.1, Version=21.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.Spreadsheet.v21.1.Core, Version=21.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
-      <HintPath>..\packages\DevExpress.Xpo.21.1.7\lib\net452\DevExpress.Xpo.v21.1.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.XtraCharts.v21.1, Version=21.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.Xpo.v21.1, Version=21.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\DevExpress.Xpo.21.1.9\lib\net452\DevExpress.Xpo.v21.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v21.1, Version=21.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
